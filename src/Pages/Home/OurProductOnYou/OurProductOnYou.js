@@ -37,10 +37,11 @@ const OurProductOnYou = () => {
     ]
     return (
         
-        <div className='mt-20 w-[1440px]  m-auto'>
+        <div className='mt-20 w-full lg:w-[1440px]  m-auto' data-aos="fade-up"
+        data-aos-duration="3000">
             
            
-               <div> 
+               <div className='text-center' > 
                 
                 <h1 className='text-center text-4xl font-semibold text-black  '>Dior  On You</h1>
                 <p className='text-center text-xl  text-black  '>Share your latest looks with #DiorOnYou for a chance to be featured.</p>

@@ -49,7 +49,9 @@ const WearNow = () => {
             <div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 justify-items-center mt-10'>
              {Wears.map(wear =><>
              
-             <div>
+             <div data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                 <img className='w-[400px] ' src={wear.img} alt="" srcset="" />
                 <p className=''>{wear.title}</p>
                 <div className='grid grid-cols-2 '>

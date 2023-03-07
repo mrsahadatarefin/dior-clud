@@ -3,7 +3,7 @@ import img from "../../../assets/banner/summer.jpeg";
 
 const Sell = () => {
   return (
-    <div className="mt-20 border-t-[1px] bg-[#dcdfe4] flex flex-col lg:flex-row ">
+    <div className="mt-20 border-t-[1px] bg-[#dcdfe4] flex flex-col lg:flex-row " data-aos="zoom-in">
       <div className="w-full lg:w-[70%]">
         <img
           className="h-[400px] w-full lg:w-[70%] opacity-50"

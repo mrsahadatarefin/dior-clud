@@ -4,7 +4,8 @@ import img from "../../../assets/banner/pexels-photo-7621779.jpeg";
 const DressAbout = () => {
   return (
     <div className="border-t-[1px] flex flex-col lg:flex-row    ">
-      <div className="w-full lg:w-[50%] mt-10 mx-2 lg:mx-8 lg:mt-56 ">
+      <div className="w-full lg:w-[50%] mt-10 mx-2 lg:mx-8 lg:mt-56 " data-aos="fade-up"
+     data-aos-duration="3000">
         <h1 className=" text-4xl font-semibold text-black lg:text-5xl text-center ">
         Dress like a boss.
         </h1>
@@ -32,7 +33,8 @@ const DressAbout = () => {
         </div>
        
       </div>
-      <div className="w-full lg:w-[50%] mt-10 ">
+      <div className="w-full lg:w-[50%] mt-10  " data-aos="fade-up"
+     data-aos-duration="3000">
         <img className="  w-full h-[400px] lg:h-[600px]" src={img} alt="" srcset="" />
       </div>
     </div>

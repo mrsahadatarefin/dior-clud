@@ -2,7 +2,7 @@ import React from "react";
 
 const SomeText = () => {
   return (
-    <div className="text-center text-4xl font-bold text-black lg:text-6xl  mt-40 mb-40 ">
+    <div className="text-center text-4xl font-bold text-black lg:text-6xl  mt-40 mb-40 " data-aos="zoom-in">
       <p className="leading-normal">
         Fashion is a dirty business. <br />
          We’

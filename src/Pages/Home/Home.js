@@ -1,5 +1,7 @@
 import React from 'react';
 import Banner from './Banner/Banner';
+import Category from './Category/Category';
+
 import DressAbout from './DressAbout/DressAbout';
 import Logos from './Logos/Logos';
 import OurProductOnYou from './OurProductOnYou/OurProductOnYou';
@@ -14,10 +16,13 @@ const Home = () => {
         <div>
             <Video></Video>
          <Banner></Banner>
+         
          <SomeText></SomeText>
+         <Category></Category>
+         
          <DressAbout></DressAbout>
          <WearNow></WearNow>
-         
+       
          <Sell></Sell>
          <Logos></Logos>
          <OurProductOnYou></OurProductOnYou>
