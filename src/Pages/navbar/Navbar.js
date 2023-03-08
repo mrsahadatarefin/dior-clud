@@ -2,9 +2,12 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import img from '../../assets/logo.png'
 import { AuthContext } from '../../context/ContextProvider';
+import useAdmin from '../hooks/useAdmin';
 
 const Navbar = () => {
+ 
   const {user,logOut}=useContext(AuthContext)
+  const [isAdmin]= useAdmin(user?.email)
   const handleLogout = ()=>{
     logOut()
     .then(()=>{
@@ -16,10 +19,29 @@ const Navbar = () => {
 
      const navInfo = <React.Fragment>
  <li><Link to='/' className='font-bold text-black'>Home</Link></li>
- <li><Link to='/myOrder' className='font-bold text-black'>My order</Link></li>
- <li><Link to='/addProduct' className='font-bold text-black'>Add product</Link></li>
  
- {user?.email? <li className='font-bold text-black' onClick={handleLogout} ><Link >logout</Link></li>:
+
+ 
+
+ 
+ 
+ {user?.email? <>
+ 
+  <li tabIndex={0}>
+        <Link className='font-semibold text-black'>
+        dashboard
+          <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </Link>
+        <ul className="p-2">
+        <li><Link to='/myOrder' className='font-bold text-black  bg-white'>My orders</Link></li>
+         {
+          isAdmin &&  <li><Link to='/allUsers' className='font-bold text-black bg-white '>All users</Link></li>
+         }
+        </ul>
+      </li>
+      <li><Link to='/addProduct' className='font-bold text-black'>Add product</Link></li>
+  <li className='font-bold text-black' onClick={handleLogout} ><Link >logout</Link></li>
+ </>:
  
   <>
   <li ><Link className='font-bold text-black' to='/login'>login</Link></li>
@@ -46,13 +68,28 @@ const Navbar = () => {
       </label>
       <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
         {navInfo}
+
+       
       </ul>
     </div>
     <img src={img} className='h-[50px] w-[50px]' alt="" srcset="" />
   </div>
   <div className="navbar-center hidden lg:flex">
+
+
+
+
+    
     <ul className="menu menu-horizontal px-1">
     {navInfo}
+
+    
+
+ 
+    
+
+
+    
     </ul>
   </div>
   <div className="navbar-end  mr-3 ">

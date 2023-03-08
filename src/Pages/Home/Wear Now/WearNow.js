@@ -42,16 +42,14 @@ const WearNow = () => {
         },
     ]
     return (
-        <div>
+        <div data-aos="zoom-in">
             <div>
                 <h1 className='text-center text-4xl font-medium text-black mt-20'>Wear Now, Love Forever</h1>
             </div>
             <div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 justify-items-center mt-10'>
              {Wears.map(wear =><>
              
-             <div data-aos="fade-up"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
+             <div  data-aos="zoom-in">
                 <img className='w-[400px] ' src={wear.img} alt="" srcset="" />
                 <p className=''>{wear.title}</p>
                 <div className='grid grid-cols-2 '>

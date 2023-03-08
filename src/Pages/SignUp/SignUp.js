@@ -42,7 +42,7 @@ const SignUp = () => {
       const saveUser = (name, email,title) => {
         const user = { name, email,title };
     
-        fetch("http://localhost:5000/users", {
+        fetch("https://dior-server.vercel.app/users", {
           method: "POST",
           headers: {
             'Content-type': 'application/json',

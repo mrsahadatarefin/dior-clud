@@ -16,7 +16,7 @@ const Logos = () => {
         {img:img6}
     ] 
     return (
-        <div className='bg-black   w-full grid gap-5  grid-cols-1 lg:grid-cols-6 justify-items-center md:grid-cols-3  '>
+        <div className='bg-black   w-full grid gap-5  grid-cols-1 lg:grid-cols-6 justify-items-center md:grid-cols-3  ' data-aos="zoom-in">
              {
            logos.map(logo => <>
 

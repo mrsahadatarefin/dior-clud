@@ -37,7 +37,7 @@ const OurProductOnYou = () => {
     ]
     return (
         
-        <div className='mt-20 w-full lg:w-[1440px]  m-auto' data-aos="fade-up"
+        <div className='mt-20 w-full lg:w-[1440px]  m-auto'  data-aos="zoom-in"
         data-aos-duration="3000">
             
            

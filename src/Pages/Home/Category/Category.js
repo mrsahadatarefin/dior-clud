@@ -12,14 +12,14 @@ const Category = () => {
 
   
   useEffect(() => {
-    fetch("http://localhost:5000/categoryName")
+    fetch("https://dior-server.vercel.app/categoryName")
       .then((res) => res.json())
       .then((data) => setCategory(data));
   }, []);
 
 
   const handleSelectCategory = (categoryName) => {
-     fetch(`http://localhost:5000/category/by/?category=${categoryName}`)
+     fetch(`https://dior-server.vercel.app/category/by/?category=${categoryName}`)
 
       .then((res) => res.json())
       .then((data) => {
@@ -31,11 +31,11 @@ const Category = () => {
 
  
   return (
-    <div className="mt-20" data-aos="zoom-in-down">
+    <div className="mt-20" data-aos="zoom-in">
       <h1 className="text-center text-4xl  font-bold text-black">
         Shop by Category
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 " data-aos="zoom-in">
         {category.map(single => ( <SingleCategory
          key={single._id}
          single ={single}

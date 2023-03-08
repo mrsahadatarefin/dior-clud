@@ -1,21 +1,21 @@
 [
-    {
-        "category":"shoes",
-        "category_img":"https://images.solecollector.com/complex/images/c_crop,h_1527,w_1430,x_57,y_28/c_fill,dpr_2.0,f_auto,fl_lossy,q_auto,w_800/sxl7xtkuxgyzdnah3mqv/travis-scott-dior-air-jordan-1"
-    }, 
+    {"category":"shoes",
+    "category_img":"https://images.solecollector.com/complex/images/c_crop,h_1527,w_1430,x_57,y_28/c_fill,dpr_2.0,f_auto,fl_lossy,q_auto,w_800/sxl7xtkuxgyzdnah3mqv/travis-scott-dior-air-jordan-1"
+},
 
-    {
-        "category":"outerwear",
-       "category_img":"https://api.fastretailing.com/ugc/v1/uq/gl/OFFICIAL_IMAGES/220908001547_official_styling_130013229",
-    },
 
-    {
-        "category":"back pack",
-        "category_img":"https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/grid_image_13/460x497/17f82f742ffe127f42dca9de82fb58b1/A/t/1604421910_1VOBA088YKY_H28E_E13_GH.jpg?imwidth=430"
-    },
+    {"category":"outerwear",
+    "category_img":"https://api.fastretailing.com/ugc/v1/uq/gl/OFFICIAL_IMAGES/220908001547_official_styling_130013229"
+},
+
+
+    {"category":"back pack",
+    "category_img":"https://wwws.dior.com/couture/ecommerce/media/catalog/product/cache/1/grid_image_13/460x497/17f82f742ffe127f42dca9de82fb58b1/A/t/1604421910_1VOBA088YKY_H28E_E13_GH.jpg?imwidth=430"
+},
+
+    {"category":"jewelry",
+    "category_img":"https://www.dior.com/couture/var/dior/storage/images/folder-media/folder-productpage/folder-crossselllook/folder-homme/folder-collection-spring-23/folder-erl/block-h_23_1_look_018/39044284-1-eng-GB/h_23_1_look_018_1440_1200.jpg"
+}
+
     
-    {
-        "category":"jewelry",
-        "category_img":"https://www.dior.com/couture/var/dior/storage/images/folder-media/folder-productpage/folder-crossselllook/folder-homme/folder-collection-spring-23/folder-erl/block-h_23_1_look_018/39044284-1-eng-GB/h_23_1_look_018_1440_1200.jpg"  
-    }
 ]

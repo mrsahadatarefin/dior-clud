@@ -4,7 +4,7 @@ import img from "../../../assets/banner/pexels-photo-7621779.jpeg";
 const DressAbout = () => {
   return (
     <div className="border-t-[1px] flex flex-col lg:flex-row    ">
-      <div className="w-full lg:w-[50%] mt-10 mx-2 lg:mx-8 lg:mt-56 " data-aos="fade-up"
+      <div className="w-full lg:w-[50%] mt-10 mx-2 lg:mx-8 lg:mt-56 "  data-aos="zoom-in"
      data-aos-duration="3000">
         <h1 className=" text-4xl font-semibold text-black lg:text-5xl text-center ">
         Dress like a boss.

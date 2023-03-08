@@ -36,7 +36,7 @@ const AddProduct = () => {
         
             }
            
-         fetch('http://localhost:5000/category',{
+         fetch('https://dior-server.vercel.app/category',{
         
          method:'POST',
          headers: {
@@ -69,7 +69,7 @@ const AddProduct = () => {
 
     return (
            
-        <div className="  mt-20 flex justify-center items-center">
+        <div className="  mt-20 flex justify-center items-center mb-20  ">
         <div className="w-96 bg-[#f2f7ff] rounded-lg p-7">
           <h2 className="text-5xl text-center pt-20 font-bold">Add Product</h2>
           <p className='text-xl text-center pt-5'>Tell me what you want to sell</p>

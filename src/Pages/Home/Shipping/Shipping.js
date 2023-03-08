@@ -25,12 +25,12 @@ const Shipping = () => {
       dis: "We have 11 stores across the U.S.",
     },
   ];
-  return <div className="mt-20  bg-[#f5f1e0]">
+  return <div className="mt-20  bg-[#f5f1e0]" data-aos="zoom-in">
     <div className="grid gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
     {
     shipping.map(shi=><>
-    <div className=" p-28   " data-aos="fade-up"
-     data-aos-duration="3000">
+    <div className=" p-28" 
+     >
         <img src={shi.img} alt="" srcset="" className="m-auto" />
         <h1 className="text-center text-xl text-black font-bold"> {shi.title}</h1>
         <p className="text-center text-xl text-black">{shi.dis}</p>

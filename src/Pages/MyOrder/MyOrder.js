@@ -6,7 +6,7 @@ const MyOrder = () => {
  
     const [order,serOrder]=useState([])
     useEffect(()=>{
-        fetch(`http://localhost:5000/orders/?email=${user?.email}`)
+        fetch(`https://dior-server.vercel.app/orders/?email=${user?.email}`)
         .then(res=> res.json())
         .then(data =>serOrder(data))
 
@@ -15,7 +15,7 @@ const MyOrder = () => {
 
 
     return (
-        <div className="overflow-x-auto  mt-10  w-full h-[800px] ">
+        <div className="overflow-x-auto  mt-20  w-full h-[800px] ">
         <table className="table  w-full  ">
      
           <thead>
@@ -54,14 +54,14 @@ const MyOrder = () => {
                 </div>
               </td>
               <td>
-                <h1 className="text-xl font-semibold text-black" >{or.displayName}</h1>
+                <h1 className=" font-semibold text-black" >{or.displayName}</h1>
 
 
               </td>
-              <td className="text-xl font-semibold text-black" >{or.email}</td>
-              <td className="text-xl font-semibold text-black" >{or.product}</td>
-              <td className="text-xl font-semibold text-black" >{or.price}$</td>
-              <td className="text-xl font-semibold text-black" >{or.location}</td>
+              <td className=" font-semibold text-black" >{or.email}</td>
+              <td className=" font-semibold text-black" >{or.product}</td>
+              <td className=" font-semibold text-black" >{or.price}$</td>
+              <td className=" font-semibold text-black" >{or.location}</td>
               <th>
                 <button className="btn btn-outline btn-xs">Delete</button>
               </th>
