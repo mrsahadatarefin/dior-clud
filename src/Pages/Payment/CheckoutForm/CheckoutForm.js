@@ -79,7 +79,34 @@ if(paymentIntent.status === "succeeded" ){
 
   setSuccess(' congrats! your payment completed');
   setTransactionId(paymentIntent.id)
+  
  
+ const payment = {
+  
+  allSum,
+  transactionId:paymentIntent.id,
+  email:user.email
+
+
+   
+
+ }
+ 
+  fetch('https://dior-server.vercel.app/payment',{
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify( payment ),
+
+
+ })
+ .then(res => res.json())
+ .then(data =>{
+  console.log(data)
+  if(data.insertedId){
+    setSuccess(' congrats! your payment completed');
+    setTransactionId(paymentIntent.id)
+  }
+ })
 }
 setProcessing(false)
 console.log('paymentIntent',paymentIntent)

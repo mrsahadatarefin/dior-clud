@@ -76,7 +76,7 @@ const MyOrder = () => {
       </table>
       <div className="flex justify-center lg:justify-end pr-10 mb-10" >
       <h1 className="font-bold text-xl  pr-5"> All price : <span className="font-medium text-xl text-black ">{allSum} $</span></h1><br />
-       <Link to='/payment'>  <button className="btn btn-sm border-solid rounded-sm bg-white text-black hover:text-white  ">OnLine  Pay</button></Link>
+       
          </div>
          <Payment allSum={allSum} order={order}  ></Payment>
     </div>
