@@ -5,13 +5,23 @@ const AddProduct = () => {
 
     
     const handleAddService = data =>{
+
    
        console.log(data)
+
+      //  const image = data.image[0];
+      //  const formData = new FormData() 
+      //  formData.append('image',image);
+      
+      //  fetch('https://api.imgbb.com/1/upload?expiration=e772de39f0b2d53993571bb4d0afd895',{
+      //   method:'POST',
+      //   body:formData
+      //  })
         
         const image = data.image[0];
         const formData = new FormData();
         formData.append('image', image);
-         const url = 'https://api.imgbb.com/1/upload?expiration=600&key=f98015dbbcd1ed2c025876eb031ae4c8';
+         const url ='https://api.imgbb.com/1/upload=e772de39f0b2d53993571bb4d0afd895';
         fetch(url,{
             method:'POST',
             body:formData

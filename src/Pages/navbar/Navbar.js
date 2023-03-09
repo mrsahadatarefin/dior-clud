@@ -33,9 +33,9 @@ const Navbar = () => {
           <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
         </Link>
         <ul className="p-2">
-        <li><Link to='/myOrder' className='font-bold text-black  bg-white'>My orders</Link></li>
+        <li><Link to='/myOrder' className='font-bold text-black  bg-white drop-shadow-md'>My orders</Link></li>
          {
-          isAdmin &&  <li><Link to='/allUsers' className='font-bold text-black bg-white '>All users</Link></li>
+          isAdmin &&  <li><Link to='/allUsers' className='font-bold text-black bg-white drop-shadow-md '>All users</Link></li>
          }
         </ul>
       </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
        
       </ul>
     </div>
-    <img src={img} className='h-[50px] w-[50px]' alt="" srcset="" />
+    <img src={img} className='h-[50px] w-[50px] ' alt="" srcset="" />
   </div>
   <div className="navbar-center hidden lg:flex">
 
@@ -92,7 +92,7 @@ const Navbar = () => {
     
     </ul>
   </div>
-  <div className="navbar-end  mr-3 ">
+  <div className="navbar-end  mr-3  hidden lg:block lg:pl-36  ">
   
   <input type="text" placeholder="Search" className="input input-bordered mx-3" />
   <div className="indicator">

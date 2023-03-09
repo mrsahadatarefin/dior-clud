@@ -5,6 +5,7 @@ import AllUsers from "../Pages/AllUsers/AllUsers";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import MyOrder from "../Pages/MyOrder/MyOrder";
+import Payment from "../Pages/Payment/Payment";
 import SignUp from "../Pages/SignUp/SignUp";
 import AdminRoutes from "./AdminRoutes";
 
@@ -42,6 +43,11 @@ export const route = createBrowserRouter([
 {
     path:'/allUsers',
     element:<AdminRoutes><AllUsers></AllUsers></AdminRoutes>
+    
+},
+{
+    path:'/payment',
+    element:<PrivateRoute><Payment></Payment></PrivateRoute>
     
 },
 
