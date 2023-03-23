@@ -1,3 +1,37 @@
+Admin
+Email:shuvo1@gmai.com
+password:123456
+
+The Dior club is man fashion website users can buy a luxury product
+• Firebase Authentication with Google/Email/ Password.
+• Protected Route, product category, Dynamic Route. User can add product user 
+has a Dashboard they can see their order and if sign up user is an admin they create 
+a new admin
+• React.js, Tailwind, MongoDB, Firebase, Note.js, Express.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
