@@ -32,7 +32,7 @@ const Footer = () => {
     <a className="link link-hover">Cookie policy</a>
   </div> 
   <div>
-    <span className="footer-title">Newsletter</span> 
+    <span className="footer-title">Contact</span> 
     <div className="form-control w-80">
       <label className="label">
         <span className="label-text">Enter your email address</span>
@@ -41,7 +41,7 @@ const Footer = () => {
       
         <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" /> 
        
-        <button className="btn btn-primary absolute top-0 right-0 rounded-l-none bg-black text-white ">Subscribe</button>
+        <button className="btn btn-primary absolute top-0 right-0 rounded-l-none bg-black text-white ">Submit</button>
       
         <h1 className='font-bold mt-5 '> Email: sahadatarefin@gmail.com</h1>
       

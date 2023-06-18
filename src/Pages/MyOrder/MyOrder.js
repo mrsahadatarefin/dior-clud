@@ -60,9 +60,9 @@ const MyOrder = () => {
                   </h1>
                 </td>
                 <td className=" font-semibold text-black">{or.email}</td>
-              
-                <td className=" font-semibold text-black">{or.location}</td>
                 <td className=" font-semibold text-black">{or.price}$</td>
+                <td className=" font-semibold text-black">{or.location}</td>
+                
 
                 <th>
                   <button className="btn btn-outline btn-xs">Delete</button>

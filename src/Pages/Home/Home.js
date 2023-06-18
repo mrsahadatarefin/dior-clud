@@ -10,6 +10,7 @@ import Shipping from './Shipping/Shipping';
 import SomeText from './Some text/SomeText';
 import Video from './video/video';
 import WearNow from './Wear Now/WearNow';
+import NewsLetter from './NewsLetter';
 
 const Home = () => {
     return (
@@ -26,7 +27,10 @@ const Home = () => {
          <Sell></Sell>
          <Logos></Logos>
          <OurProductOnYou></OurProductOnYou>
+         <NewsLetter></NewsLetter>
          <Shipping></Shipping>
+        
+           
          
         </div>
     );
